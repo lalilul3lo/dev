@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "proximity_service"
+name = "implement_me"
 version = "0.1.0"
