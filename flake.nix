@@ -18,6 +18,10 @@
         path = ./rust;
         description = "Rust development environment";
       };
+      rust_bin = {
+        path = ./rust_bin;
+        description = "Rust development environment for a binary";
+      };
     };
   };
 }
