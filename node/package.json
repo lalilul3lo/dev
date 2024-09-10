@@ -1,0 +1,16 @@
+{
+  "name": "{{%= node =%}}",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npx tsx index.test.ts"
+  },
+  "author": "Samuel Joli",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "tsx": "^4.19.0"
+  }
+}
