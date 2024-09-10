@@ -14,10 +14,10 @@
     });
 
     templates = {
-      rust = {
-        path = ./rust;
-        description = "Rust development environment";
-      };
+      node = {
+        path = ./node;
+        description = "NodeJS development environment";
+      }
       rust_bin = {
         path = ./rust_bin;
         description = "Rust development environment for a binary";
