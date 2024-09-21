@@ -1,9 +1,5 @@
-import { EventEmitter } from 'node:events';
+const subject = (a: number, b: number): number => {
+  return a + b;
+};
 
-class MyEmitter extends EventEmitter { }
-
-export const emitterInstance = new MyEmitter();
-
-export default (eventName: string, callback: () => void) => {
-  emitterInstance.on(eventName, callback)
-}
+export default subject

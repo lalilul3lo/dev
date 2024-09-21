@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "main": "index.ts",
   "scripts": {
-    "test": "npx tsx index.test.ts"
+    "test": "npx lab index.test.ts --typescript"
   },
   "author": "Samuel Joli",
   "license": "ISC",
   "description": "",
   "type": "module",
   "devDependencies": {
+    "@hapi/code": "^9.0.3",
+    "@hapi/lab": "^25.3.1",
     "@types/node": "^22.5.4",
     "tsx": "^4.19.0"
   }

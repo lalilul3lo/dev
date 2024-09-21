@@ -1,17 +1,13 @@
-import { describe, mock, test } from 'node:test';
-import { strict as assert } from 'node:assert';
+import * as Lab from '@hapi/lab';
+import { expect } from '@hapi/code';
+import subject from '.';
 
-import registerEvent, { emitterInstance } from './index'
+const lab = Lab.script();
+const { describe, it } = lab;
+export { lab };
 
-describe('registerEvent()', () => {
-  test('it should register an event and invoke callback when event is emitted', () => {
-    const callback = mock.fn();
-
-    registerEvent('greet', callback);
-
-    emitterInstance.emit('greet')
-
-    assert.strictEqual(callback.mock.callCount(), 1)
-  })
-})
-
+describe('subject', () => {
+  it('should add to integers', async () => {
+    expect(subject(40, 2)).to.equal(42);
+  });
+});
