@@ -133,9 +133,14 @@
 
           # Extra inputs can be added here; cargo and rustc are provided by default.
           packages = [
-            pkgs.cargo-wizard
             {{%= rust_bin =%}}
+            pkgs.cargo-wizard
+            fenix.rust-analyzer
           ];
+          env = {
+            # Required by rust-analyzer
+            RUST_SRC_PATH = "${fenix.packages.${system}.stable.rust-src}/lib/rustlib/src/rust/library";
+          };
         };
       });
 }
