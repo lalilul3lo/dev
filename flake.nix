@@ -24,6 +24,10 @@
           path = ./rust_bin;
           description = "Rust development environment for a binary";
         };
+        rust_lib = {
+          path = ./rust_lib;
+          description = "Rust development environment for a library";
+        };
       };
     };
 }
